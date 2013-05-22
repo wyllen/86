@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration:none;
+}
+body{
+	background: url(img/concrete-trans.png) #353535;
+}
+.wrapper{
+	width:1200px;
+	margin:0 auto;
+}
+.header {
+background: url(img/stripes.png);
+border-bottom: 2px dashed #74d68e;
+box-shadow: 0 5px 0 #353535;
+margin-bottom: 5px;
+}
+.bg-img {
+background: url(img/header-bg.jpg);
+background-size: cover;
+height: 400px;
+}
+.board {
+background: url(img/concrete.jpg);
+background-size: cover;
+height: 500px;
+}
+.content {
+background: url(img/stripes-2.png) white;
+}
+.footer {
+background: url(img/concrete.png);
+}
+.menu a{
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+}
+.menu > ul > li > a {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	display: block;
+}
+.menu li {
+display: inline-block;
+}
+.menu li:nth-of-type(3){
+	margin-right: 20%;
+}
+.menu{
+	text-align:justify;
+	position:relative;
+}
+.menu ul:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.logo {
+position: absolute;
+width: 200px;
+display: block;
+left: 50%;
+top: 2px;
+margin-left: -100px;
+}
+.logo img{
+	position:relative;
+	width:100%;
+	z-index:4;
+	-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+.logo:before {
+position: absolute;
+width: 120%;
+content: "";
+height: 120%;
+left: -10%;
+bottom: -10%;
+background: url(img/stripes.png);
+border-radius: 50%;
+z-index: 2;
+}
+.logo-home {
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+background: white;
+color: #000;
+text-align: center;
+border-radius: 50%;
+line-height: 200px;
+z-index: 3;
+-webkit-transform: rotateY(90deg);
+}
+
+@-webkit-keyframes rotate 
+{
+0%   {-webkit-transform: rotateY(-90deg);}
+50%  {-webkit-transform: rotateY(-90deg);}
+100% {-webkit-transform: rotateY(0deg);}
+}
+
+.logo:hover img{
+	-webkit-transform: rotateY(90deg);
+	}
+
+.logo:hover .logo-home {
+	-webkit-animation:rotate 600ms;
+	}
