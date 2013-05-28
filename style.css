@@ -218,13 +218,29 @@ transform: rotateX(180deg);
 transform: rotateX(0deg);
 z-index: 3;
 }
-
+.sidebar-top {
+background: url(img/stripes.png);
+}
 .share li {
 float: left;
 margin-right: 20px;
 }
-.share:after{
+.share {
+float: left;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+.share:after,.community:after{
 	content:"";
 	display:block;
 	clear:both;
+}
+.members-login {
+background: url(img/stripes-2.png) #74D68E;
+width: 30%;
+position: absolute;
+right:0;
+}
+.community {
+position: relative;
 }
