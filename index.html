@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Agence QuatreVingtSix</title>
 	<link rel="stylesheet" href="style.css">
+	<meta content="initial-scale=1; maximum-scale=1; user-scalable=0;" name="viewport">
 </head>
 <body>
 	<header class="header">
@@ -41,12 +42,14 @@
 		</div>		
 		</div>	
 		<div class="board">
-			<a href="" class="board-mail"></a>
+			<div class="wrapper">
+			<a href="" class="board-mail"><span class="letsgo">Let's GO!</span><h3>Contact</h3></a>
 			<a href="" class="board-project"><span class="idea">Une idée?</span><h3>Un projet?</h3></a>
-			<a href="" class="board-realisations"><h3>Nos réalisations</h3></a>
-			<a href="" class="board-team"><h3>L'équipe</h3></a>
-			<a href="" class="board-blog"><span class="board-blog-baseline">Quoi de neuf?</span><h3>Le blog</h3></a>
+			<a href="" class="board-realisations"><span class="enfin">Enfin...</span><h3>Réalisations</h3></a>
+			<a href="" class="board-team"><span class="cestnous">C'est nous!</span><h3>L'équipe</h3></a>
+			<a href="" class="board-blog"><span class="blog-baseline">Quoi de neuf?</span><h3>Le blog</h3></a>
 			<a href="" class="board-numbers"><span class="pi">3.14159</span><h3>86 en chiffres</h3></a>
+			</div>
 		</div>	
 	</aside>
 	<section class="content">
@@ -63,22 +66,23 @@
 	</section>
 	<footer class="footer">
 		<div class="footer-maps">
+			<div class="maps-bg">
+				<iframe width='100%' height='100%' frameBorder='0' src='http://a.tiles.mapbox.com/v3/wyllen.map-gz5zn65x.html#12/47.22610000000001/-1.400000000000003'></iframe>
+			</div>
 			<address>
 				<h3>QuatreVingtSix</h3>
 				<p>44000 Nantes</p>
 				<p>02 40 00 00 00</p>
 			</address>			
 		</div>
-		<div class="copyright">
-			<div class="wrapper">
+		<div class="copyright">			
 			<ul class="skills">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><img src="img/wordpress.png" alt=""></li>
+				<li><img src="img/symfony.png" alt=""></li>
+				<li><img src="img/css3.png" alt=""></li>
+				<li><img src="img/html5.png" alt=""></li>
 			</ul>
-			<p><a href="mailto:contact@quatrevingtsix.com"></a> | <a href="">Mentions légales</a> | ©2013 QuatreVingtSix</p>
-		</div>
+			<p class="mailto"><a href="mailto:contact@quatrevingtsix.com">contact@quatrevingtsix.com</a> | <a href="">Mentions légales</a> | ©2013 QuatreVingtSix</p>
 		</div>
 	</footer>
 </body>
