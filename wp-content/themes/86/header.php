@@ -10,7 +10,7 @@
 <body>
 	<header class="header">
 		<div class="wrapper">
-		<nav class="menu">
+		<nav class="menu-header">
 			<a class="menu-toggle" href="#main-menu"><span>menu</span></a>
 			  <?php wp_nav_menu( array('theme_location' => 'menu', 'container' => '','menu-class' =>'menu-ul', 'container_id' => '', 'menu_id' =>'') ); ?>
 			<a href="<?php echo site_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri();?>/img/logo86.png" alt=""><div class="logo-home"><div class="home"></div></div></a>

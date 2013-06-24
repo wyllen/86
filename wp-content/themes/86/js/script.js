@@ -13,10 +13,10 @@ jQuery(document).ready(function($) {
      $('.menu-toggle').click(function(e){
       if (!(e.which > 1 || e.shiftKey || e.altKey || e.metaKey)) {
         e.preventDefault();
-        if($('.menu ul').hasClass('expanded-menu')){
-          $('.menu ul').removeClass('expanded-menu');
+        if($('.menu-header ul').hasClass('expanded-menu')){
+          $('.menu-header ul').removeClass('expanded-menu');
         }else{
-          $('.menu ul').addClass('expanded-menu');
+          $('.menu-header ul').addClass('expanded-menu');
         }
       }
     });
